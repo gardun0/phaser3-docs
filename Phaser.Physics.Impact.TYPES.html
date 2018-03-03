@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Phaser Namespace: TYPES</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.cerulean.css">
+
+</head>
+
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top ">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">Phaser</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="namespaces.list.html" class="dropdown-toggle" data-toggle="dropdown">Namespaces<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="EventEmitter.html">EventEmitter</a></li><li><a href="Phaser.html">Phaser</a></li><li><a href="Phaser.Actions.html">Phaser.Actions</a></li><li><a href="Phaser.Animations.html">Phaser.Animations</a></li><li><a href="Phaser.BlendModes.html">Phaser.BlendModes</a></li><li><a href="Phaser.Boot.html">Phaser.Boot</a></li><li><a href="Phaser.Cache.html">Phaser.Cache</a></li><li><a href="Phaser.Cameras.html">Phaser.Cameras</a></li><li><a href="Phaser.Cameras.Controls.html">Phaser.Cameras.Controls</a></li><li><a href="Phaser.Cameras.Scene2D.html">Phaser.Cameras.Scene2D</a></li><li><a href="Phaser.Cameras.Sprite3D.html">Phaser.Cameras.Sprite3D</a></li><li><a href="Phaser.Create.html">Phaser.Create</a></li><li><a href="Phaser.Create.Palettes.html">Phaser.Create.Palettes</a></li><li><a href="Phaser.Curves.html">Phaser.Curves</a></li><li><a href="Phaser.Data.html">Phaser.Data</a></li><li><a href="Phaser.Device.html">Phaser.Device</a></li><li><a href="Phaser.Display.html">Phaser.Display</a></li><li><a href="Phaser.Display.Align.html">Phaser.Display.Align</a></li><li><a href="Phaser.Display.Align.In.html">Phaser.Display.Align.In</a></li><li><a href="Phaser.Display.Align.To.html">Phaser.Display.Align.To</a></li><li><a href="Phaser.Display.Bounds.html">Phaser.Display.Bounds</a></li><li><a href="Phaser.Display.Canvas.html">Phaser.Display.Canvas</a></li><li><a href="Phaser.Display.Canvas.CanvasInterpolation.html">Phaser.Display.Canvas.CanvasInterpolation</a></li><li><a href="Phaser.Display.Canvas.CanvasPool.html">Phaser.Display.Canvas.CanvasPool</a></li><li><a href="Phaser.Display.Canvas.Smoothing.html">Phaser.Display.Canvas.Smoothing</a></li><li><a href="Phaser.Display.Color.Interpolate.html">Phaser.Display.Color.Interpolate</a></li><li><a href="Phaser.Display.Masks.html">Phaser.Display.Masks</a></li><li><a href="Phaser.DOM.html">Phaser.DOM</a></li><li><a href="Phaser.Events.html">Phaser.Events</a></li><li><a href="Phaser.GameObjects.html">Phaser.GameObjects</a></li><li><a href="Phaser.GameObjects.Components.html">Phaser.GameObjects.Components</a></li><li><a href="Phaser.GameObjects.Graphics.Commands.html">Phaser.GameObjects.Graphics.Commands</a></li><li><a href="Phaser.GameObjects.Particles.html">Phaser.GameObjects.Particles</a></li><li><a href="Phaser.Geom.html">Phaser.Geom</a></li><li><a href="Phaser.Geom.Intersects.html">Phaser.Geom.Intersects</a></li><li><a href="Phaser.Input.html">Phaser.Input</a></li><li><a href="Phaser.Input.Gamepad.html">Phaser.Input.Gamepad</a></li><li><a href="Phaser.Input.Gamepad.Configs.html">Phaser.Input.Gamepad.Configs</a></li><li><a href="Phaser.Input.Keyboard.html">Phaser.Input.Keyboard</a></li><li><a href="Phaser.Input.Mouse.html">Phaser.Input.Mouse</a></li><li><a href="Phaser.Input.Touch.html">Phaser.Input.Touch</a></li><li><a href="Phaser.Loader.html">Phaser.Loader</a></li><li><a href="Phaser.Loader.FileTypes.html">Phaser.Loader.FileTypes</a></li><li><a href="Phaser.Math.html">Phaser.Math</a></li><li><a href="Phaser.Math.Angle.html">Phaser.Math.Angle</a></li><li><a href="Phaser.Math.Distance.html">Phaser.Math.Distance</a></li><li><a href="Phaser.Math.Easing.html">Phaser.Math.Easing</a></li><li><a href="Phaser.Math.Fuzzy.html">Phaser.Math.Fuzzy</a></li><li><a href="Phaser.Math.Interpolation.html">Phaser.Math.Interpolation</a></li><li><a href="Phaser.Math.Pow2.html">Phaser.Math.Pow2</a></li><li><a href="Phaser.Math.Snap.html">Phaser.Math.Snap</a></li><li><a href="Phaser.Physics.html">Phaser.Physics</a></li><li><a href="Phaser.Physics.Arcade.html">Phaser.Physics.Arcade</a></li><li><a href="Phaser.Physics.Impact.html">Phaser.Physics.Impact</a></li><li><a href="Phaser.Physics.Impact.COLLIDES.html">Phaser.Physics.Impact.COLLIDES</a></li><li><a href="Phaser.Physics.Impact.TYPES.html">Phaser.Physics.Impact.TYPES</a></li><li><a href="Phaser.Physics.Matter.html">Phaser.Physics.Matter</a></li><li><a href="Phaser.Plugins.html">Phaser.Plugins</a></li><li><a href="Phaser.Renderer.html">Phaser.Renderer</a></li><li><a href="Phaser.Renderer.Canvas.html">Phaser.Renderer.Canvas</a></li><li><a href="Phaser.Renderer.Snapshot.html">Phaser.Renderer.Snapshot</a></li><li><a href="Phaser.Renderer.WebGL.html">Phaser.Renderer.WebGL</a></li><li><a href="Phaser.Renderer.WebGL.Utils.html">Phaser.Renderer.WebGL.Utils</a></li><li><a href="Phaser.ScaleModes.html">Phaser.ScaleModes</a></li><li><a href="Phaser.Scenes.html">Phaser.Scenes</a></li><li><a href="Phaser.Sound.html">Phaser.Sound</a></li><li><a href="Phaser.Structs.html">Phaser.Structs</a></li><li><a href="Phaser.Textures.html">Phaser.Textures</a></li><li><a href="Phaser.Textures.FilterMode.html">Phaser.Textures.FilterMode</a></li><li><a href="Phaser.Textures.Parsers.html">Phaser.Textures.Parsers</a></li><li><a href="Phaser.Tilemaps.html">Phaser.Tilemaps</a></li><li><a href="Phaser.Tilemaps.Components.html">Phaser.Tilemaps.Components</a></li><li><a href="Phaser.Tilemaps.Formats.html">Phaser.Tilemaps.Formats</a></li><li><a href="Phaser.Tilemaps.Parsers.html">Phaser.Tilemaps.Parsers</a></li><li><a href="Phaser.Time.html">Phaser.Time</a></li><li><a href="Phaser.Tweens.html">Phaser.Tweens</a></li><li><a href="Phaser.Tweens.Builders.html">Phaser.Tweens.Builders</a></li><li><a href="Phaser.Utils.html">Phaser.Utils</a></li><li><a href="Phaser.Utils.Array.html">Phaser.Utils.Array</a></li><li><a href="Phaser.Utils.Array.Matrix.html">Phaser.Utils.Array.Matrix</a></li><li><a href="Phaser.Utils.Object.html">Phaser.Utils.Object</a></li><li><a href="Phaser.Utils.String.html">Phaser.Utils.String</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="global.html#Class">Class</a></li><li><a href="Phaser.Animations.Animation.html">Phaser.Animations.Animation</a></li><li><a href="Phaser.Animations.AnimationFrame.html">Phaser.Animations.AnimationFrame</a></li><li><a href="Phaser.Animations.AnimationManager.html">Phaser.Animations.AnimationManager</a></li><li><a href="Phaser.Boot.Config.html">Phaser.Boot.Config</a></li><li><a href="Phaser.Boot.PluginManager.html">Phaser.Boot.PluginManager</a></li><li><a href="Phaser.Boot.TimeStep.html">Phaser.Boot.TimeStep</a></li><li><a href="Phaser.Cache.BaseCache.html">Phaser.Cache.BaseCache</a></li><li><a href="Phaser.Cache.CacheManager.html">Phaser.Cache.CacheManager</a></li><li><a href="Phaser.Cameras.Controls.FixedKeyControl.html">Phaser.Cameras.Controls.FixedKeyControl</a></li><li><a href="Phaser.Cameras.Controls.SmoothedKeyControl.html">Phaser.Cameras.Controls.SmoothedKeyControl</a></li><li><a href="Phaser.Cameras.Scene2D.Camera.html">Phaser.Cameras.Scene2D.Camera</a></li><li><a href="Phaser.Cameras.Scene2D.CameraManager.html">Phaser.Cameras.Scene2D.CameraManager</a></li><li><a href="Phaser.Cameras.Sprite3D.Camera.html">Phaser.Cameras.Sprite3D.Camera</a></li><li><a href="Phaser.Cameras.Sprite3D.CameraManager.html">Phaser.Cameras.Sprite3D.CameraManager</a></li><li><a href="Phaser.Cameras.Sprite3D.OrthographicCamera.html">Phaser.Cameras.Sprite3D.OrthographicCamera</a></li><li><a href="Phaser.Cameras.Sprite3D.PerspectiveCamera.html">Phaser.Cameras.Sprite3D.PerspectiveCamera</a></li><li><a href="Phaser.Curves.CubicBezierCurve.html">Phaser.Curves.CubicBezierCurve</a></li><li><a href="Phaser.Curves.Curve.html">Phaser.Curves.Curve</a></li><li><a href="Phaser.Curves.EllipseCurve.html">Phaser.Curves.EllipseCurve</a></li><li><a href="Phaser.Curves.LineCurve.html">Phaser.Curves.LineCurve</a></li><li><a href="Phaser.Curves.MoveTo.html">Phaser.Curves.MoveTo</a></li><li><a href="Phaser.Curves.Path.html">Phaser.Curves.Path</a></li><li><a href="Phaser.Curves.SplineCurve.html">Phaser.Curves.SplineCurve</a></li><li><a href="Phaser.Data.DataManager.html">Phaser.Data.DataManager</a></li><li><a href="Phaser.Data.DataManagerPlugin.html">Phaser.Data.DataManagerPlugin</a></li><li><a href="Phaser.Display.Color.html">Phaser.Display.Color</a></li><li><a href="Phaser.Display.Masks.BitmapMask.html">Phaser.Display.Masks.BitmapMask</a></li><li><a href="Phaser.Display.Masks.GeometryMask.html">Phaser.Display.Masks.GeometryMask</a></li><li><a href="Phaser.DOM.RequestAnimationFrame.html">Phaser.DOM.RequestAnimationFrame</a></li><li><a href="Phaser.Events.EventEmitter.html">Phaser.Events.EventEmitter</a></li><li><a href="Phaser.Game.html">Phaser.Game</a></li><li><a href="Phaser.GameObjects.BitmapText.html">Phaser.GameObjects.BitmapText</a></li><li><a href="Phaser.GameObjects.Blitter.html">Phaser.GameObjects.Blitter</a></li><li><a href="Phaser.GameObjects.Blitter.Bob.html">Phaser.GameObjects.Blitter.Bob</a></li><li><a href="Phaser.GameObjects.Components.Animation.html">Phaser.GameObjects.Components.Animation</a></li><li><a href="Phaser.GameObjects.Components.TextStyle.html">Phaser.GameObjects.Components.TextStyle</a></li><li><a href="Phaser.GameObjects.Components.TransformMatrix.html">Phaser.GameObjects.Components.TransformMatrix</a></li><li><a href="Phaser.GameObjects.DisplayList.html">Phaser.GameObjects.DisplayList</a></li><li><a href="Phaser.GameObjects.DynamicBitmapText.html">Phaser.GameObjects.DynamicBitmapText</a></li><li><a href="Phaser.GameObjects.GameObject.html">Phaser.GameObjects.GameObject</a></li><li><a href="Phaser.GameObjects.GameObjectCreator.html">Phaser.GameObjects.GameObjectCreator</a></li><li><a href="Phaser.GameObjects.GameObjectFactory.html">Phaser.GameObjects.GameObjectFactory</a></li><li><a href="Phaser.GameObjects.Graphics.html">Phaser.GameObjects.Graphics</a></li><li><a href="Phaser.GameObjects.Group.html">Phaser.GameObjects.Group</a></li><li><a href="Phaser.GameObjects.Image.html">Phaser.GameObjects.Image</a></li><li><a href="Phaser.GameObjects.Light.html">Phaser.GameObjects.Light</a></li><li><a href="Phaser.GameObjects.LightsManager.html">Phaser.GameObjects.LightsManager</a></li><li><a href="Phaser.GameObjects.LightsPlugin.html">Phaser.GameObjects.LightsPlugin</a></li><li><a href="Phaser.GameObjects.Mesh.html">Phaser.GameObjects.Mesh</a></li><li><a href="Phaser.GameObjects.Particles.EmitterOp.html">Phaser.GameObjects.Particles.EmitterOp</a></li><li><a href="Phaser.GameObjects.Particles.GravityWell.html">Phaser.GameObjects.Particles.GravityWell</a></li><li><a href="Phaser.GameObjects.Particles.Particle.html">Phaser.GameObjects.Particles.Particle</a></li><li><a href="Phaser.GameObjects.Particles.ParticleEmitter.html">Phaser.GameObjects.Particles.ParticleEmitter</a></li><li><a href="Phaser.GameObjects.Particles.ParticleEmitterManager.html">Phaser.GameObjects.Particles.ParticleEmitterManager</a></li><li><a href="Phaser.GameObjects.Particles.Zones.DeathZone.html">Phaser.GameObjects.Particles.Zones.DeathZone</a></li><li><a href="Phaser.GameObjects.Particles.Zones.EdgeZone.html">Phaser.GameObjects.Particles.Zones.EdgeZone</a></li><li><a href="Phaser.GameObjects.Particles.Zones.RandomZone.html">Phaser.GameObjects.Particles.Zones.RandomZone</a></li><li><a href="Phaser.GameObjects.PathFollower.html">Phaser.GameObjects.PathFollower</a></li><li><a href="Phaser.GameObjects.Quad.html">Phaser.GameObjects.Quad</a></li><li><a href="Phaser.GameObjects.Sprite.html">Phaser.GameObjects.Sprite</a></li><li><a href="Phaser.GameObjects.Sprite3D.html">Phaser.GameObjects.Sprite3D</a></li><li><a href="Phaser.GameObjects.Text.html">Phaser.GameObjects.Text</a></li><li><a href="Phaser.GameObjects.TileSprite.html">Phaser.GameObjects.TileSprite</a></li><li><a href="Phaser.GameObjects.UpdateList.html">Phaser.GameObjects.UpdateList</a></li><li><a href="Phaser.GameObjects.Zone.html">Phaser.GameObjects.Zone</a></li><li><a href="Phaser.Geom.Circle.html">Phaser.Geom.Circle</a></li><li><a href="Phaser.Geom.Ellipse.html">Phaser.Geom.Ellipse</a></li><li><a href="Phaser.Geom.Line.html">Phaser.Geom.Line</a></li><li><a href="Phaser.Geom.Point.html">Phaser.Geom.Point</a></li><li><a href="Phaser.Geom.Polygon.html">Phaser.Geom.Polygon</a></li><li><a href="Phaser.Geom.Rectangle.html">Phaser.Geom.Rectangle</a></li><li><a href="Phaser.Geom.Triangle.html">Phaser.Geom.Triangle</a></li><li><a href="Phaser.Input.Gamepad.Axis.html">Phaser.Input.Gamepad.Axis</a></li><li><a href="Phaser.Input.Gamepad.Button.html">Phaser.Input.Gamepad.Button</a></li><li><a href="Phaser.Input.Gamepad.Gamepad.html">Phaser.Input.Gamepad.Gamepad</a></li><li><a href="Phaser.Input.Gamepad.GamepadManager.html">Phaser.Input.Gamepad.GamepadManager</a></li><li><a href="Phaser.Input.InputManager.html">Phaser.Input.InputManager</a></li><li><a href="Phaser.Input.InputPlugin.html">Phaser.Input.InputPlugin</a></li><li><a href="Phaser.Input.Keyboard.Key.html">Phaser.Input.Keyboard.Key</a></li><li><a href="Phaser.Input.Keyboard.KeyboardManager.html">Phaser.Input.Keyboard.KeyboardManager</a></li><li><a href="Phaser.Input.Keyboard.KeyCombo.html">Phaser.Input.Keyboard.KeyCombo</a></li><li><a href="Phaser.Input.Mouse.MouseManager.html">Phaser.Input.Mouse.MouseManager</a></li><li><a href="Phaser.Input.Pointer.html">Phaser.Input.Pointer</a></li><li><a href="Phaser.Input.Touch.TouchManager.html">Phaser.Input.Touch.TouchManager</a></li><li><a href="Phaser.Loader.File.html">Phaser.Loader.File</a></li><li><a href="Phaser.Loader.FileTypes.AudioFile.html">Phaser.Loader.FileTypes.AudioFile</a></li><li><a href="Phaser.Loader.FileTypes.BinaryFile.html">Phaser.Loader.FileTypes.BinaryFile</a></li><li><a href="Phaser.Loader.FileTypes.GLSLFile.html">Phaser.Loader.FileTypes.GLSLFile</a></li><li><a href="Phaser.Loader.FileTypes.HTML5AudioFile.html">Phaser.Loader.FileTypes.HTML5AudioFile</a></li><li><a href="Phaser.Loader.FileTypes.HTMLFile.html">Phaser.Loader.FileTypes.HTMLFile</a></li><li><a href="Phaser.Loader.FileTypes.ImageFile.html">Phaser.Loader.FileTypes.ImageFile</a></li><li><a href="Phaser.Loader.FileTypes.JSONFile.html">Phaser.Loader.FileTypes.JSONFile</a></li><li><a href="Phaser.Loader.FileTypes.PluginFile.html">Phaser.Loader.FileTypes.PluginFile</a></li><li><a href="Phaser.Loader.FileTypes.ScriptFile.html">Phaser.Loader.FileTypes.ScriptFile</a></li><li><a href="Phaser.Loader.FileTypes.SVGFile.html">Phaser.Loader.FileTypes.SVGFile</a></li><li><a href="Phaser.Loader.FileTypes.TextFile.html">Phaser.Loader.FileTypes.TextFile</a></li><li><a href="Phaser.Loader.FileTypes.TilemapCSVFile.html">Phaser.Loader.FileTypes.TilemapCSVFile</a></li><li><a href="Phaser.Loader.FileTypes.XMLFile.html">Phaser.Loader.FileTypes.XMLFile</a></li><li><a href="Phaser.Loader.LoaderPlugin.html">Phaser.Loader.LoaderPlugin</a></li><li><a href="Phaser.Math.Matrix3.html">Phaser.Math.Matrix3</a></li><li><a href="Phaser.Math.Matrix4.html">Phaser.Math.Matrix4</a></li><li><a href="Phaser.Math.Quaternion.html">Phaser.Math.Quaternion</a></li><li><a href="Phaser.Math.RandomDataGenerator.html">Phaser.Math.RandomDataGenerator</a></li><li><a href="Phaser.Math.Vector2.html">Phaser.Math.Vector2</a></li><li><a href="Phaser.Math.Vector3.html">Phaser.Math.Vector3</a></li><li><a href="Phaser.Math.Vector4.html">Phaser.Math.Vector4</a></li><li><a href="Phaser.Physics.Arcade.ArcadePhysics.html">Phaser.Physics.Arcade.ArcadePhysics</a></li><li><a href="Phaser.Physics.Arcade.Body.html">Phaser.Physics.Arcade.Body</a></li><li><a href="Phaser.Physics.Arcade.Collider.html">Phaser.Physics.Arcade.Collider</a></li><li><a href="Phaser.Physics.Arcade.Factory.html">Phaser.Physics.Arcade.Factory</a></li><li><a href="Phaser.Physics.Arcade.Group.html">Phaser.Physics.Arcade.Group</a></li><li><a href="Phaser.Physics.Arcade.Image.html">Phaser.Physics.Arcade.Image</a></li><li><a href="Phaser.Physics.Arcade.Sprite.html">Phaser.Physics.Arcade.Sprite</a></li><li><a href="Phaser.Physics.Arcade.StaticBody.html">Phaser.Physics.Arcade.StaticBody</a></li><li><a href="Phaser.Physics.Arcade.StaticGroup.html">Phaser.Physics.Arcade.StaticGroup</a></li><li><a href="Phaser.Physics.Arcade.World.html">Phaser.Physics.Arcade.World</a></li><li><a href="Phaser.Physics.Impact.Body.html">Phaser.Physics.Impact.Body</a></li><li><a href="Phaser.Physics.Impact.CollisionMap.html">Phaser.Physics.Impact.CollisionMap</a></li><li><a href="Phaser.Physics.Impact.Factory.html">Phaser.Physics.Impact.Factory</a></li><li><a href="Phaser.Physics.Impact.ImpactBody.html">Phaser.Physics.Impact.ImpactBody</a></li><li><a href="Phaser.Physics.Impact.ImpactImage.html">Phaser.Physics.Impact.ImpactImage</a></li><li><a href="Phaser.Physics.Impact.ImpactPhysics.html">Phaser.Physics.Impact.ImpactPhysics</a></li><li><a href="Phaser.Physics.Impact.ImpactSprite.html">Phaser.Physics.Impact.ImpactSprite</a></li><li><a href="Phaser.Physics.Impact.World.html">Phaser.Physics.Impact.World</a></li><li><a href="Phaser.Physics.Matter.Factory.html">Phaser.Physics.Matter.Factory</a></li><li><a href="Phaser.Physics.Matter.MatterImage.html">Phaser.Physics.Matter.MatterImage</a></li><li><a href="Phaser.Physics.Matter.MatterPhysics.html">Phaser.Physics.Matter.MatterPhysics</a></li><li><a href="Phaser.Physics.Matter.MatterSprite.html">Phaser.Physics.Matter.MatterSprite</a></li><li><a href="Phaser.Physics.Matter.PointerConstraint.html">Phaser.Physics.Matter.PointerConstraint</a></li><li><a href="Phaser.Physics.Matter.TileBody.MatterTileBody.html">Phaser.Physics.Matter.TileBody.MatterTileBody</a></li><li><a href="Phaser.Physics.Matter.World.html">Phaser.Physics.Matter.World</a></li><li><a href="Phaser.Renderer.Canvas.CanvasRenderer.html">Phaser.Renderer.Canvas.CanvasRenderer</a></li><li><a href="Phaser.Renderer.WebGL.BitmapMaskPipeline.html">Phaser.Renderer.WebGL.BitmapMaskPipeline</a></li><li><a href="Phaser.Renderer.WebGL.FlatTintPipeline.html">Phaser.Renderer.WebGL.FlatTintPipeline</a></li><li><a href="Phaser.Renderer.WebGL.ForwardDiffuseLightPipeline.html">Phaser.Renderer.WebGL.ForwardDiffuseLightPipeline</a></li><li><a href="Phaser.Renderer.WebGL.TextureTintPipeline.html">Phaser.Renderer.WebGL.TextureTintPipeline</a></li><li><a href="Phaser.Renderer.WebGL.WebGLPipeline.html">Phaser.Renderer.WebGL.WebGLPipeline</a></li><li><a href="Phaser.Renderer.WebGL.WebGLRenderer.html">Phaser.Renderer.WebGL.WebGLRenderer</a></li><li><a href="Phaser.Scene.html">Phaser.Scene</a></li><li><a href="Phaser.Scenes.SceneManager.html">Phaser.Scenes.SceneManager</a></li><li><a href="Phaser.Scenes.ScenePlugin.html">Phaser.Scenes.ScenePlugin</a></li><li><a href="Phaser.Scenes.Systems.html">Phaser.Scenes.Systems</a></li><li><a href="Phaser.Sound.BaseSound.html">Phaser.Sound.BaseSound</a></li><li><a href="Phaser.Sound.BaseSoundManager.html">Phaser.Sound.BaseSoundManager</a></li><li><a href="Phaser.Sound.HTML5AudioSound.html">Phaser.Sound.HTML5AudioSound</a></li><li><a href="Phaser.Sound.HTML5AudioSoundManager.html">Phaser.Sound.HTML5AudioSoundManager</a></li><li><a href="Phaser.Sound.NoAudioSound.html">Phaser.Sound.NoAudioSound</a></li><li><a href="Phaser.Sound.NoAudioSoundManager.html">Phaser.Sound.NoAudioSoundManager</a></li><li><a href="Phaser.Sound.WebAudioSound.html">Phaser.Sound.WebAudioSound</a></li><li><a href="Phaser.Sound.WebAudioSoundManager.html">Phaser.Sound.WebAudioSoundManager</a></li><li><a href="Phaser.Structs.List.html">Phaser.Structs.List</a></li><li><a href="Phaser.Structs.Map.html">Phaser.Structs.Map</a></li><li><a href="Phaser.Structs.ProcessQueue.html">Phaser.Structs.ProcessQueue</a></li><li><a href="Phaser.Structs.RTree.html">Phaser.Structs.RTree</a></li><li><a href="Phaser.Structs.Set.html">Phaser.Structs.Set</a></li><li><a href="Phaser.Textures.Frame.html">Phaser.Textures.Frame</a></li><li><a href="Phaser.Textures.Texture.html">Phaser.Textures.Texture</a></li><li><a href="Phaser.Textures.TextureManager.html">Phaser.Textures.TextureManager</a></li><li><a href="Phaser.Textures.TextureSource.html">Phaser.Textures.TextureSource</a></li><li><a href="Phaser.Tilemaps.DynamicTilemapLayer.html">Phaser.Tilemaps.DynamicTilemapLayer</a></li><li><a href="Phaser.Tilemaps.ImageCollection.html">Phaser.Tilemaps.ImageCollection</a></li><li><a href="Phaser.Tilemaps.LayerData.html">Phaser.Tilemaps.LayerData</a></li><li><a href="Phaser.Tilemaps.MapData.html">Phaser.Tilemaps.MapData</a></li><li><a href="Phaser.Tilemaps.ObjectLayer.html">Phaser.Tilemaps.ObjectLayer</a></li><li><a href="Phaser.Tilemaps.StaticTilemapLayer.html">Phaser.Tilemaps.StaticTilemapLayer</a></li><li><a href="Phaser.Tilemaps.Tile.html">Phaser.Tilemaps.Tile</a></li><li><a href="Phaser.Tilemaps.Tilemap.html">Phaser.Tilemaps.Tilemap</a></li><li><a href="Phaser.Tilemaps.Tileset.html">Phaser.Tilemaps.Tileset</a></li><li><a href="Phaser.Time.Clock.html">Phaser.Time.Clock</a></li><li><a href="Phaser.Time.TimerEvent.html">Phaser.Time.TimerEvent</a></li><li><a href="Phaser.Tweens.Timeline.html">Phaser.Tweens.Timeline</a></li><li><a href="Phaser.Tweens.Tween.html">Phaser.Tweens.Tween</a></li><li><a href="Phaser.Tweens.TweenManager.html">Phaser.Tweens.TweenManager</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="events.list.html" class="dropdown-toggle" data-toggle="dropdown">Events<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="Phaser.Boot.html#.VisibilityHandler#event:blur">Phaser.Boot.VisibilityHandler#event:blur</a></li><li><a href="Phaser.Boot.html#.VisibilityHandler#event:focus">Phaser.Boot.VisibilityHandler#event:focus</a></li><li><a href="Phaser.Boot.html#.VisibilityHandler#event:hidden">Phaser.Boot.VisibilityHandler#event:hidden</a></li><li><a href="Phaser.Boot.html#.VisibilityHandler#event:visible">Phaser.Boot.VisibilityHandler#event:visible</a></li><li><a href="Phaser.Cache.BaseCache.html#event:addEvent">Phaser.Cache.BaseCache#event:addEvent</a></li><li><a href="Phaser.Cache.BaseCache.html#event:removeEvent">Phaser.Cache.BaseCache#event:removeEvent</a></li><li><a href="Phaser.Game.html#event:boot">Phaser.Game#event:boot</a></li><li><a href="Phaser.Game.html#event:pauseEvent">Phaser.Game#event:pauseEvent</a></li><li><a href="Phaser.Game.html#event:postrenderEvent">Phaser.Game#event:postrenderEvent</a></li><li><a href="Phaser.Game.html#event:prerenderEvent">Phaser.Game#event:prerenderEvent</a></li><li><a href="Phaser.Game.html#event:resizeEvent">Phaser.Game#event:resizeEvent</a></li><li><a href="Phaser.Game.html#event:resumeEvent">Phaser.Game#event:resumeEvent</a></li><li><a href="Phaser.Sound.BaseSound.html#event:detune">Phaser.Sound.BaseSound#event:detune</a></li><li><a href="Phaser.Sound.BaseSound.html#event:rate">Phaser.Sound.BaseSound#event:rate</a></li><li><a href="Phaser.Sound.BaseSoundManager.html#event:detune">Phaser.Sound.BaseSoundManager#event:detune</a></li><li><a href="Phaser.Sound.BaseSoundManager.html#event:pauseall">Phaser.Sound.BaseSoundManager#event:pauseall</a></li><li><a href="Phaser.Sound.BaseSoundManager.html#event:rate">Phaser.Sound.BaseSoundManager#event:rate</a></li><li><a href="Phaser.Sound.BaseSoundManager.html#event:resumeall">Phaser.Sound.BaseSoundManager#event:resumeall</a></li><li><a href="Phaser.Sound.BaseSoundManager.html#event:stopall">Phaser.Sound.BaseSoundManager#event:stopall</a></li><li><a href="Phaser.Sound.BaseSoundManager.html#event:unlocked">Phaser.Sound.BaseSoundManager#event:unlocked</a></li><li><a href="Phaser.Sound.HTML5AudioSound.html#event:detune">Phaser.Sound.HTML5AudioSound#event:detune</a></li><li><a href="Phaser.Sound.HTML5AudioSound.html#event:ended">Phaser.Sound.HTML5AudioSound#event:ended</a></li><li><a href="Phaser.Sound.HTML5AudioSound.html#event:loop">Phaser.Sound.HTML5AudioSound#event:loop</a></li><li><a href="Phaser.Sound.HTML5AudioSound.html#event:looped">Phaser.Sound.HTML5AudioSound#event:looped</a></li><li><a href="Phaser.Sound.HTML5AudioSound.html#event:mute">Phaser.Sound.HTML5AudioSound#event:mute</a></li><li><a href="Phaser.Sound.HTML5AudioSound.html#event:pause">Phaser.Sound.HTML5AudioSound#event:pause</a></li><li><a href="Phaser.Sound.HTML5AudioSound.html#event:play">Phaser.Sound.HTML5AudioSound#event:play</a></li><li><a href="Phaser.Sound.HTML5AudioSound.html#event:rate">Phaser.Sound.HTML5AudioSound#event:rate</a></li><li><a href="Phaser.Sound.HTML5AudioSound.html#event:resume">Phaser.Sound.HTML5AudioSound#event:resume</a></li><li><a href="Phaser.Sound.HTML5AudioSound.html#event:seek">Phaser.Sound.HTML5AudioSound#event:seek</a></li><li><a href="Phaser.Sound.HTML5AudioSound.html#event:stop">Phaser.Sound.HTML5AudioSound#event:stop</a></li><li><a href="Phaser.Sound.HTML5AudioSound.html#event:volume">Phaser.Sound.HTML5AudioSound#event:volume</a></li><li><a href="Phaser.Sound.HTML5AudioSoundManager.html#event:detune">Phaser.Sound.HTML5AudioSoundManager#event:detune</a></li><li><a href="Phaser.Sound.HTML5AudioSoundManager.html#event:mute">Phaser.Sound.HTML5AudioSoundManager#event:mute</a></li><li><a href="Phaser.Sound.HTML5AudioSoundManager.html#event:pauseall">Phaser.Sound.HTML5AudioSoundManager#event:pauseall</a></li><li><a href="Phaser.Sound.HTML5AudioSoundManager.html#event:rate">Phaser.Sound.HTML5AudioSoundManager#event:rate</a></li><li><a href="Phaser.Sound.HTML5AudioSoundManager.html#event:resumeall">Phaser.Sound.HTML5AudioSoundManager#event:resumeall</a></li><li><a href="Phaser.Sound.HTML5AudioSoundManager.html#event:stopall">Phaser.Sound.HTML5AudioSoundManager#event:stopall</a></li><li><a href="Phaser.Sound.HTML5AudioSoundManager.html#event:unlocked">Phaser.Sound.HTML5AudioSoundManager#event:unlocked</a></li><li><a href="Phaser.Sound.HTML5AudioSoundManager.html#event:volume">Phaser.Sound.HTML5AudioSoundManager#event:volume</a></li><li><a href="Phaser.Sound.NoAudioSound.html#event:detune">Phaser.Sound.NoAudioSound#event:detune</a></li><li><a href="Phaser.Sound.NoAudioSound.html#event:rate">Phaser.Sound.NoAudioSound#event:rate</a></li><li><a href="Phaser.Sound.NoAudioSoundManager.html#event:detune">Phaser.Sound.NoAudioSoundManager#event:detune</a></li><li><a href="Phaser.Sound.NoAudioSoundManager.html#event:pauseall">Phaser.Sound.NoAudioSoundManager#event:pauseall</a></li><li><a href="Phaser.Sound.NoAudioSoundManager.html#event:rate">Phaser.Sound.NoAudioSoundManager#event:rate</a></li><li><a href="Phaser.Sound.NoAudioSoundManager.html#event:resumeall">Phaser.Sound.NoAudioSoundManager#event:resumeall</a></li><li><a href="Phaser.Sound.NoAudioSoundManager.html#event:stopall">Phaser.Sound.NoAudioSoundManager#event:stopall</a></li><li><a href="Phaser.Sound.NoAudioSoundManager.html#event:unlocked">Phaser.Sound.NoAudioSoundManager#event:unlocked</a></li><li><a href="Phaser.Sound.WebAudioSound.html#event:detune">Phaser.Sound.WebAudioSound#event:detune</a></li><li><a href="Phaser.Sound.WebAudioSound.html#event:ended">Phaser.Sound.WebAudioSound#event:ended</a></li><li><a href="Phaser.Sound.WebAudioSound.html#event:loop">Phaser.Sound.WebAudioSound#event:loop</a></li><li><a href="Phaser.Sound.WebAudioSound.html#event:looped">Phaser.Sound.WebAudioSound#event:looped</a></li><li><a href="Phaser.Sound.WebAudioSound.html#event:mute">Phaser.Sound.WebAudioSound#event:mute</a></li><li><a href="Phaser.Sound.WebAudioSound.html#event:pause">Phaser.Sound.WebAudioSound#event:pause</a></li><li><a href="Phaser.Sound.WebAudioSound.html#event:play">Phaser.Sound.WebAudioSound#event:play</a></li><li><a href="Phaser.Sound.WebAudioSound.html#event:rate">Phaser.Sound.WebAudioSound#event:rate</a></li><li><a href="Phaser.Sound.WebAudioSound.html#event:resume">Phaser.Sound.WebAudioSound#event:resume</a></li><li><a href="Phaser.Sound.WebAudioSound.html#event:seek">Phaser.Sound.WebAudioSound#event:seek</a></li><li><a href="Phaser.Sound.WebAudioSound.html#event:stop">Phaser.Sound.WebAudioSound#event:stop</a></li><li><a href="Phaser.Sound.WebAudioSound.html#event:volume">Phaser.Sound.WebAudioSound#event:volume</a></li><li><a href="Phaser.Sound.WebAudioSoundManager.html#event:detune">Phaser.Sound.WebAudioSoundManager#event:detune</a></li><li><a href="Phaser.Sound.WebAudioSoundManager.html#event:mute">Phaser.Sound.WebAudioSoundManager#event:mute</a></li><li><a href="Phaser.Sound.WebAudioSoundManager.html#event:pauseall">Phaser.Sound.WebAudioSoundManager#event:pauseall</a></li><li><a href="Phaser.Sound.WebAudioSoundManager.html#event:rate">Phaser.Sound.WebAudioSoundManager#event:rate</a></li><li><a href="Phaser.Sound.WebAudioSoundManager.html#event:resumeall">Phaser.Sound.WebAudioSoundManager#event:resumeall</a></li><li><a href="Phaser.Sound.WebAudioSoundManager.html#event:stopall">Phaser.Sound.WebAudioSoundManager#event:stopall</a></li><li><a href="Phaser.Sound.WebAudioSoundManager.html#event:unlocked">Phaser.Sound.WebAudioSoundManager#event:unlocked</a></li><li><a href="Phaser.Sound.WebAudioSoundManager.html#event:volume">Phaser.Sound.WebAudioSoundManager#event:volume</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Global<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="global.html#Actions">Actions</a></li><li><a href="global.html#actualFps">actualFps</a></li><li><a href="global.html#AddToDOM">AddToDOM</a></li><li><a href="global.html#AdvanceKeyCombo">AdvanceKeyCombo</a></li><li><a href="global.html#ALIGN_CONST">ALIGN_CONST</a></li><li><a href="global.html#AlignIn">AlignIn</a></li><li><a href="global.html#Angle">Angle</a></li><li><a href="global.html#Animation">Animation</a></li><li><a href="global.html#AnimationComponent">AnimationComponent</a></li><li><a href="global.html#append">append</a></li><li><a href="global.html#ArcadeImage">ArcadeImage</a></li><li><a href="global.html#ArcadeSprite">ArcadeSprite</a></li><li><a href="global.html">area</a></li><li><a href="global.html#Arne16">Arne16</a></li><li><a href="global.html#ArrayShuffle">ArrayShuffle</a></li><li><a href="global.html#at">at</a></li><li><a href="global.html#AudioFile">AudioFile</a></li><li><a href="global.html#Axis">Axis</a></li><li><a href="global.html#Back">Back</a></li><li><a href="global.html#Base64Decode">Base64Decode</a></li><li><a href="global.html#BaseCache">BaseCache</a></li><li><a href="global.html#BaseSound">BaseSound</a></li><li><a href="global.html#BaseSoundManager">BaseSoundManager</a></li><li><a href="global.html#Bernstein">Bernstein</a></li><li><a href="global.html#Between">Between</a></li><li><a href="global.html#BitmapText">BitmapText</a></li><li><a href="global.html#BlendModes">BlendModes</a></li><li><a href="global.html#BlitImage">BlitImage</a></li><li><a href="global.html#Blitter">Blitter</a></li><li><a href="global.html#BlitterRender">BlitterRender</a></li><li><a href="global.html#Bodies">Bodies</a></li><li><a href="global.html#Body">Body</a></li><li><a href="global.html#Bounds">Bounds</a></li><li><a href="global.html#Browser">Browser</a></li><li><a href="global.html#BuildGameObject">BuildGameObject</a></li><li><a href="global.html#CalculateFacesWithin">CalculateFacesWithin</a></li><li><a href="global.html#callback">callback</a></li><li><a href="global.html#Camera">Camera</a></li><li><a href="global.html#canSee">canSee</a></li><li><a href="global.html#CanvasInterpolation">CanvasInterpolation</a></li><li><a href="global.html#CanvasPool">CanvasPool</a></li><li><a href="global.html#CatmullRom">CatmullRom</a></li><li><a href="global.html#CenterOn">CenterOn</a></li><li><a href="global.html#Centroid">Centroid</a></li><li><a href="global.html#Circle">Circle</a></li><li><a href="global.html#CircleContains">CircleContains</a></li><li><a href="global.html#CircumCenter">CircumCenter</a></li><li><a href="global.html#Circumference">Circumference</a></li><li><a href="global.html#CircumferencePoint">CircumferencePoint</a></li><li><a href="global.html#Clamp">Clamp</a></li><li><a href="global.html#clear">clear</a></li><li><a href="global.html#Clone">Clone</a></li><li><a href="global.html#COLLIDES">COLLIDES</a></li><li><a href="global.html#collinear">collinear</a></li><li><a href="global.html#Color">Color</a></li><li><a href="global.html#Commands">Commands</a></li><li><a href="global.html#ComponentToHex">ComponentToHex</a></li><li><a href="global.html#CONST">CONST</a></li><li><a href="global.html#Contains">Contains</a></li><li><a href="global.html#ContainsArray">ContainsArray</a></li><li><a href="global.html#context">context</a></li><li><a href="global.html#copy">copy</a></li><li><a href="global.html#decomp">decomp</a></li><li><a href="global.html#Defaults">Defaults</a></li><li><a href="global.html#delta">delta</a></li><li><a href="global.html#deltaHistory">deltaHistory</a></li><li><a href="global.html#deltaIndex">deltaIndex</a></li><li><a href="global.html#deltaSmoothingMax">deltaSmoothingMax</a></li><li><a href="global.html#det">det</a></li><li><a href="global.html#DistanceBetween">DistanceBetween</a></li><li><a href="global.html#DynamicBitmapText">DynamicBitmapText</a></li><li><a href="global.html#EarCut">EarCut</a></li><li><a href="global.html#EaseMap">EaseMap</a></li><li><a href="global.html#Ellipse">Ellipse</a></li><li><a href="global.html">eq</a></li><li><a href="global.html#Extend">Extend</a></li><li><a href="global.html#Factorial">Factorial</a></li><li><a href="global.html#FILE_CONST">FILE_CONST</a></li><li><a href="global.html#FileTypesManager">FileTypesManager</a></li><li><a href="global.html#FLIPPED_HORIZONTAL">FLIPPED_HORIZONTAL</a></li><li><a href="global.html#forceSetTimeOut">forceSetTimeOut</a></li><li><a href="global.html#Formats">Formats</a></li><li><a href="global.html#frame">frame</a></li><li><a href="global.html#framesThisSecond">framesThisSecond</a></li><li><a href="global.html#game">game</a></li><li><a href="global.html#GameObject">GameObject</a></li><li><a href="global.html#GameObjectCreator">GameObjectCreator</a></li><li><a href="global.html#GameObjectFactory">GameObjectFactory</a></li><li><a href="global.html#Geom">Geom</a></li><li><a href="global.html#GetAdvancedValue">GetAdvancedValue</a></li><li><a href="global.html#GetAspectRatio">GetAspectRatio</a></li><li><a href="global.html#GetBitmapTextSize">GetBitmapTextSize</a></li><li><a href="global.html#GetBottom">GetBottom</a></li><li><a href="global.html#GetCenterX">GetCenterX</a></li><li><a href="global.html#GetCenterY">GetCenterY</a></li><li><a href="global.html#GetColor">GetColor</a></li><li><a href="global.html#getCutEdges">getCutEdges</a></li><li><a href="global.html#GetFastValue">GetFastValue</a></li><li><a href="global.html#GetLeft">GetLeft</a></li><li><a href="global.html#GetMagnitude">GetMagnitude</a></li><li><a href="global.html#GetOverlapX">GetOverlapX</a></li><li><a href="global.html#GetOverlapY">GetOverlapY</a></li><li><a href="global.html#GetPoint">GetPoint</a></li><li><a href="global.html#GetPoints">GetPoints</a></li><li><a href="global.html#GetRight">GetRight</a></li><li><a href="global.html#GetTextSize">GetTextSize</a></li><li><a href="global.html#GetTileAt">GetTileAt</a></li><li><a href="global.html#GetTilesWithin">GetTilesWithin</a></li><li><a href="global.html#getValue">getValue</a></li><li><a href="global.html#GetValue">GetValue</a></li><li><a href="global.html#Graphics">Graphics</a></li><li><a href="global.html#Group">Group</a></li><li><a href="global.html#H">H</a></li><li><a href="global.html#hasGetStart">hasGetStart</a></li><li><a href="global.html#HasTileAt">HasTileAt</a></li><li><a href="global.html#HasValue">HasValue</a></li><li><a href="global.html#HexStringToColor">HexStringToColor</a></li><li><a href="global.html#HSVToRGB">HSVToRGB</a></li><li><a href="global.html#HTML5AudioSoundManager">HTML5AudioSoundManager</a></li><li><a href="global.html#Image">Image</a></li><li><a href="global.html#imageHeight">imageHeight</a></li><li><a href="global.html#inFocus">inFocus</a></li><li><a href="global.html#init">init</a></li><li><a href="global.html#IsInLayerBounds">IsInLayerBounds</a></li><li><a href="global.html#IsPlainObject">IsPlainObject</a></li><li><a href="global.html#isReflex">isReflex</a></li><li><a href="global.html#isSimple">isSimple</a></li><li><a href="global.html#KeyCodes">KeyCodes</a></li><li><a href="global.html#lastTime">lastTime</a></li><li><a href="global.html#LayerData">LayerData</a></li><li><a href="global.html#Length">Length</a></li><li><a href="global.html#Line">Line</a></li><li><a href="global.html#Linear">Linear</a></li><li><a href="global.html">lineInt</a></li><li><a href="global.html#LineToCircle">LineToCircle</a></li><li><a href="global.html#LineToLine">LineToLine</a></li><li><a href="global.html#makeCCW">makeCCW</a></li><li><a href="global.html#MarchingAnts">MarchingAnts</a></li><li><a href="global.html#MATH">MATH</a></li><li><a href="global.html#MATH_CONST">MATH_CONST</a></li><li><a href="global.html#MathRotateAroundDistance">MathRotateAroundDistance</a></li><li><a href="global.html#MathSmootherStep">MathSmootherStep</a></li><li><a href="global.html#MathSmoothStep">MathSmoothStep</a></li><li><a href="global.html#MathWrap">MathWrap</a></li><li><a href="global.html#Matter">Matter</a></li><li><a href="global.html#MatterEvents">MatterEvents</a></li><li><a href="global.html#MeasureText">MeasureText</a></li><li><a href="global.html#MergeXHRSettings">MergeXHRSettings</a></li><li><a href="global.html#Mesh">Mesh</a></li><li><a href="global.html#minFps">minFps</a></li><li><a href="global.html#ModelViewProjection">ModelViewProjection</a></li><li><a href="global.html#modes">modes</a></li><li><a href="global.html#nextFpsUpdate">nextFpsUpdate</a></li><li><a href="global.html#Normalize">Normalize</a></li><li><a href="global.html#OS">OS</a></li><li><a href="global.html#P0">P0</a></li><li><a href="global.html#p1">p1</a></li><li><a href="global.html#Pad">Pad</a></li><li><a href="global.html#panicMax">panicMax</a></li><li><a href="global.html#ParseXMLBitmapFont">ParseXMLBitmapFont</a></li><li><a href="global.html#Perimeter">Perimeter</a></li><li><a href="global.html#Pick">Pick</a></li><li><a href="global.html#Point">Point</a></li><li><a href="global.html#PointToLine">PointToLine</a></li><li><a href="global.html#Polygon">Polygon</a></li><li><a href="global.html#ProcessTileSeparationX">ProcessTileSeparationX</a></li><li><a href="global.html#ProcessTileSeparationY">ProcessTileSeparationY</a></li><li><a href="global.html#project">project</a></li><li><a href="global.html#PutTileAt">PutTileAt</a></li><li><a href="global.html#Quad">Quad</a></li><li><a href="global.html#quickDecomp">quickDecomp</a></li><li><a href="global.html#quickselect">quickselect</a></li><li><a href="global.html#raf">raf</a></li><li><a href="global.html#Random">Random</a></li><li><a href="global.html#rawDelta">rawDelta</a></li><li><a href="global.html#Rectangle">Rectangle</a></li><li><a href="global.html#removeCollinearPoints">removeCollinearPoints</a></li><li><a href="global.html#RemoveTileAt">RemoveTileAt</a></li><li><a href="global.html#renderWebGL">renderWebGL</a></li><li><a href="global.html#RESERVED">RESERVED</a></li><li><a href="global.html#reverse">reverse</a></li><li><a href="global.html#RND">RND</a></li><li><a href="global.html#RotateAroundDistance">RotateAroundDistance</a></li><li><a href="global.html#RotateAroundXY">RotateAroundXY</a></li><li><a href="global.html#RotateMatrix">RotateMatrix</a></li><li><a href="global.html#RoundAwayFromZero">RoundAwayFromZero</a></li><li><a href="global.html#roundPixels">roundPixels</a></li><li><a href="global.html#running">running</a></li><li><a href="global.html#ScaleModes">ScaleModes</a></li><li><a href="global.html#segmentsIntersect">segmentsIntersect</a></li><li><a href="global.html#SetCenterX">SetCenterX</a></li><li><a href="global.html#SetTileCollision">SetTileCollision</a></li><li><a href="global.html#slice">slice</a></li><li><a href="global.html#SpliceOne">SpliceOne</a></li><li><a href="global.html#Sprite3D">Sprite3D</a></li><li><a href="global.html#started">started</a></li><li><a href="global.html#startTime">startTime</a></li><li><a href="global.html#targetFps">targetFps</a></li><li><a href="global.html#Text">Text</a></li><li><a href="global.html#Tile">Tile</a></li><li><a href="global.html#TileCheckX">TileCheckX</a></li><li><a href="global.html#Tileset">Tileset</a></li><li><a href="global.html#TileSprite">TileSprite</a></li><li><a href="global.html#TileToWorldX">TileToWorldX</a></li><li><a href="global.html#time">time</a></li><li><a href="global.html#Triangle">Triangle</a></li><li><a href="global.html#TWEEN_CONST">TWEEN_CONST</a></li><li><a href="global.html#TYPE">TYPE</a></li><li><a href="global.html#types">types</a></li><li><a href="global.html#Vector2">Vector2</a></li><li><a href="global.html#Vector3">Vector3</a></li><li><a href="global.html#WorldToTileX">WorldToTileX</a></li><li><a href="global.html#Wrap">Wrap</a></li><li><a href="global.html#Zone">Zone</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+        
+            <div class="col-sm-3 col-md-3">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" id="search-submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+	</div>
+
+</div>
+</div>
+
+
+<div class="container" id="toc-content">
+<div class="row">
+
+	
+	<div class="col-md-8">
+	
+		<div id="main">
+			
+
+	<h1 class="page-title">Namespace: TYPES</h1>
+<section>
+
+<header>
+    
+        <h2>
+            <span class="ancestors"><a href="Phaser.html">Phaser</a><a href="Phaser.Physics.html">.Physics</a><a href="Phaser.Physics.Impact.html">.Impact</a>.</span>
+        
+        TYPES
+        </h2>
+        
+    
+</header>
+
+
+<article>
+    <div class="container-overview">
+    
+        
+            <div class="description">Collision Types - Determine if and how entities collide with each other.
+
+In ACTIVE vs. LITE or FIXED vs. ANY collisions, only the "weak" entity moves,
+while the other one stays fixed. In ACTIVE vs. ACTIVE and ACTIVE vs. PASSIVE
+collisions, both entities are moved. LITE or PASSIVE entities don't collide
+with other LITE or PASSIVE entities at all. The behavior for FIXED vs.
+FIXED collisions is undefined.</div>
+        
+
+        
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        <dl>
+            
+<hr>
+<dt class="name" id=".A">
+    <h4 id=".A"><span class="type-signature">&lt;static> </span>A<span class="type-signature"> :integer</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        Type A. Collides with Type B.
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">integer</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+	<dt class="tag-since method-doc-label method-doc-details-label">Since:</dt>
+	<dd class="tag-since">
+		<ul class="dummy">
+			<li>3.0.0</li>
+		</ul>
+	</dd>
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".B">
+    <h4 id=".B"><span class="type-signature">&lt;static> </span>B<span class="type-signature"> :integer</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        Type B. Collides with Type A.
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">integer</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+	<dt class="tag-since method-doc-label method-doc-details-label">Since:</dt>
+	<dd class="tag-since">
+		<ul class="dummy">
+			<li>3.0.0</li>
+		</ul>
+	</dd>
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".BOTH">
+    <h4 id=".BOTH"><span class="type-signature">&lt;static> </span>BOTH<span class="type-signature"> :integer</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        Collides with both types A and B.
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">integer</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+	<dt class="tag-since method-doc-label method-doc-details-label">Since:</dt>
+	<dd class="tag-since">
+		<ul class="dummy">
+			<li>3.0.0</li>
+		</ul>
+	</dd>
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".NONE">
+    <h4 id=".NONE"><span class="type-signature">&lt;static> </span>NONE<span class="type-signature"> :integer</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        Collides with nothing.
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">integer</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+	<dt class="tag-since method-doc-label method-doc-details-label">Since:</dt>
+	<dd class="tag-since">
+		<ul class="dummy">
+			<li>3.0.0</li>
+		</ul>
+	</dd>
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        </dl>
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+		<div class="col-md-3">
+			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
+		</div>
+	
+
+</div>
+</div>
+
+
+    <div class="modal fade" id="searchResults">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Search results</h4>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+
+
+<footer>
+
+	Spotted an error in the docs? Please open an issue!
+
+
+	<span class="copyright">
+	Phaser Copyright © 2018 Photon Storm Ltd and the contributors to the Phaser projects.
+	</span>
+
+<span class="jsdoc-message">
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a>
+	
+		on 2018-03-02T20:33:16-06:00
+	
+	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
+</span>
+</footer>
+
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
+
+    <script type="text/javascript" src="scripts/fulltext-search-ui.js"></script>
+
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre, pre.prettyprint.source" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : false,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			return $( heading ).attr( "id" ) || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+<!--Google Analytics-->
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            SearcherDisplay.init();
+        });
+    </script>
+
+
+</body>
+</html>
